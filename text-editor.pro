@@ -26,10 +26,20 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+    mainwindow.cpp \
+    graphictext.cpp \
+    texteditor.cpp \
+    texteditorwidget.cpp \
+    igraphicobject.cpp
 
 HEADERS += \
-        mainwindow.h
+    mainwindow.h \
+    igraphicobject.h \
+    graphictext.h \
+    texteditor.h \
+    texteditorwidget.h \
+    interface/igraphicvisitor.h \
+    interface/igraphicvisitable.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
